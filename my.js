@@ -16,7 +16,7 @@ document.getElementById('btn').addEventListener('click',testGS);
 
 function addGS(){
 
-    const url='https://script.google.com/macros/s/AKfycby_3iSXSHge-4pm76kfVjW3uRMSOH0aSGatPaOgjpnYankyZYyRuvPyuAlRhqfGEmUEgg/exec'
+    const url='https://script.google.com/macros/s/AKfycbwWAraXAkE8jOvkYeSicKwKmmrQZC0T_X0EuIeXdtcezGf2qGTwRVTft4HCyf6X-BUrUw/exec'
     
     fetch(url,{
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -26,7 +26,7 @@ function addGS(){
         'Content-Type': 'application/json'
         },
         redirect: 'follow', // manual, *follow, error
-        body: JSON.stringify({name:'John'}) // body data type must match "Content-Type" header    
+        body: JSON.stringify({"First":"家駿","Last":"陳","Telephone":"21800000"}) // body data type must match "Content-Type" header    
     })
     
 
